@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happy days</title>
+
+    <style>
+        * {margin: 0; padding: 0;}
+        li {list-style: none;}
+        a {text-decoration: none;}
+        body {}
+        .wrap {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        figure {
+            background: url(/img/4.jpg) no-repeat center/cover;
+            height: 300px;
+        }
+        figure h1 {
+            text-align: center;
+            color: white;
+            font-weight: 800;
+            font-size: 50px;
+        }
+        .menu {
+            background: linear-gradient(#30005e,#19007596);
+            color: white;
+            height: 50px;
+        }
+        .menu ul {
+            display: flex; justify-content: space-between;
+            width: 800px;
+            margin: 0 auto;
+            
+        }
+        .menu ul li a {
+            color: white;
+            font-weight: 600;
+            line-height: 50px;
+        }
+        .content {
+            display: flex; justify-content: space-between;
+            padding: 50px 20px;
+        }
+        .content .text_area {
+            display: block;
+            width: 710px;
+        }
+        .content .text_area h3 {
+            font-size: 30px;
+            color: rgb(76, 0, 255);
+            margin-bottom: 20px;
+        }
+        .content .text_area span {
+            font-size: 20px; font-weight: 600;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .content .text_area p {
+            display: block; width: 650px;
+            font-size: 15px;
+            line-height: 3;
+            word-break: keep-all;
+        }
+        .content .img_area {
+            flex-direction: column;
+            width: 250px;
+        }
+        .content .img_area img {width: 250px; margin-bottom: 40px;}
+
+    </style>
+    <style>
+        @media screen and (max-width: 440px) {
+        .wrap figure {width: 100%;}
+        .content {
+            flex-direction: column;
+        }
+        .content .text_area,.content .text_area p {width: 100%;}
+        .content .img_area {flex-direction: column;}
+        .content .img_area img {width: 100%; }
+
+    }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <figure>
+            <h1>HappyDays</h1>
+        </figure>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">CAMP</a></li>
+                <li><a href="#">HOTEL</a></li>
+                <li><a href="#">RENT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="text_area">
+                <h3>#title 1</h3>
+                <span>sub Title #1</span>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellendus vero excepturi quasi animi tenetur et rerum fugiat nesciunt distinctio. Adipisci, odit qui! Aliquam pariatur tempore possimus corporis harum voluptatibus.
+                </p>
+            </div>
+            <div class="img_area">
+                <img src="/img/1.PNG" alt="">
+                <img src="/img/2.PNG" alt="">
+                <img src="/img/3.PNG" alt="">
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Happy days All right reserved.</p>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
